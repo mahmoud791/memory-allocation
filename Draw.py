@@ -12,7 +12,7 @@ def paint(segments):
     for i in range(len(segments)):
         memory_sketch.create_text(40,130+(30*i),text=segments[i].end)
         memory_sketch.create_rectangle(50,100+(30*i),150,130+(30*i))
-        memory_sketch.create_text(60,115+(30*i),text=segments[i].name)
+        memory_sketch.create_text(100,115+(30*i),text=segments[i].name)
     
     sketch.mainloop()
 
