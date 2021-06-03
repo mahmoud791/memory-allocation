@@ -8,6 +8,8 @@ def paint(segments):
     memory_sketch = Canvas(sketch,width=200,height=800,bg="white")
     
     memory_sketch.pack(pady=20)
+
+    memory_sketch.create_text(40,100,text="0")
    
     for i in range(len(segments)):
         memory_sketch.create_text(40,130+(30*i),text=segments[i].end)
